@@ -11,6 +11,7 @@ use App\Http\Controllers\admin\AdminController;
 /*rutas home*/
 Route::get('/', HomeController::class);
 
-/*rutas admin
-Route::get('/', [AdminController::class, 'index']);
-*/
+/*rutas admin*/
+Route::get('/admin', [AdminController::class, 'index']);
+
+Route::get('/admin/create', [AdminController::class, 'create']);
